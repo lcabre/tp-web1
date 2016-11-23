@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Jardin de Fatima">
+		<meta name="keywords" content="Jardin de Infantes, Jardin, Colegio, Escuela">
+		<title>Fátima - Registro</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	</head>
+	<body>
+		<header class="headerinside">
+			<div class="header-container">
+				<aside>
+					<nav>
+						<ul class="menu">
+							<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
+							<li><a href="historia.html"><i class="fa fa-history" aria-hidden="true"></i>Historia</a></li>
+							<div class="panel-group" id="accordion">
+								<li class="has-children">
+									 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									 	<i class="fa fa-building" aria-hidden="true"></i>Salas<i class="fa fa-angle-down flechaabajo" aria-hidden="true"></i>
+									 </a>
+							  		 <div id="collapseOne" class="panel-collapse collapse">
+							  		 	<div class="panel-body">
+							  				<ul id="collapseOne" class="panel-collapse collapse in">
+							  					<li><a class="submenu" href="salamaternal.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Jardín Maternal</a></li>
+												<li><a class="submenu" href="salainfantes.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Jardín de Infantes</a></li>
+							  				</ul>
+							  			</div>
+							  		</div>
+								</li>
+							</div>
+							<li><a class="ultimo" href="contacto.html"><i class="fa fa-info-circle" aria-hidden="true"></i>Contacto</a></li>
+						</ul>
+					</nav>
+				</aside>
+				<section>
+					<h1 id="titulo2" class="fadeIn animated">Registro</h1>
+				</section>
+			</div>
+			<!--<a href="#container"><div id="down"><i class="fa fa-angle-down boton" aria-hidden="true"></i></div></a>-->
+		</header>
+		<section class="espacioinferior">
+			<div class="container center">	
+				<div class="center">
+					<div class="contacto left">
+						<form action="registro.html" method="get" name="form" id="formulario">
+							<h2>Nombre y Apellido</h2>
+							<input type="text" name="nombre" id="nombre" placeholder="Su nombre y apellido">
+							<div class="errormessage">Revise este campo por favor</div>
+							
+							<h2>DNI</h2>
+							<input type="text" name="dni" id="dni" placeholder="Su DNI">
+							<div class="errormessage">Revise este campo por favor</div>
+							
+							<h2>Fecha de Nacimiento</h2>
+							<input type="text" id="datepicker" placeholder="Su fecha de nacimiento">
+							<div class="errormessage">Revise este campo por favor</div>
+							
+							<h2>Email</h2>
+							<input type="text" name="email" id="email" placeholder="Su email">
+							<div class="errormessage">Revise este campo por favor</div>
+							
+							<h2>Password</h2>
+							<input type="password" name="password" id="pass1" placeholder="Su password">
+							<div class="errormessage">Revise este campo por favor</div>
+							
+							<h2>Repetir password</h2>
+							<input type="password" name="password2" id="pass2" placeholder="Repita su password">
+							<div class="errormessage">Revise este campo por favor</div>
+
+							<input type="submit" value="Enviar (JQuery)" class="submit">
+
+							<input type="button" class="submit" value="Enviar (DOM)" name="boton" onclick="enviar()">
+						</form>
+					</div>
+				</div>		
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="wrap">
+					<div class="center separadorderecha col-md-4">
+						<div>
+							<h1><i class="fa fa-phone" aria-hidden="true"></i><br>Teléfonos</h1>
+							<p>4325.6989 - 4659.8787</p>
+						</div>
+					</div>
+					<div class="center separadorderecha col-md-4">
+						<div>
+							<h1><i class="fa fa-map-marker" aria-hidden="true"></i><br>Dirección</h1>
+							<p>Arenales 785, CABA</p>
+						</div>
+					</div>
+					<div class="center col-md-4">
+						<div>
+							<h1><i class="fa fa-envelope" aria-hidden="true"></i><br>Email</h1>
+							<p>info@jardinfatima.com.ar</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/validacion.js"></script>
+	</body>	
+</html>

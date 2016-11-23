@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Jardin de Fatima">
+		<meta name="keywords" content="Jardin de Infantes, Jardin, Colegio, Escuela">
+		<title>Fátima - Contacto</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	</head>
+	<body>
+		<header class="headerinside">
+			<a href="registro.html"><div class="registro submit">Registrarse</div></a>
+			<div class="header-container">
+				<aside>
+					<nav>
+						<ul class="menu">
+							<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
+							<li><a href="historia.html"><i class="fa fa-history" aria-hidden="true"></i>Historia</a></li>
+							<div class="panel-group" id="accordion">
+								<li class="has-children">
+									 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									 	<i class="fa fa-building" aria-hidden="true"></i>Salas<i class="fa fa-angle-down flechaabajo" aria-hidden="true"></i>
+									 </a>
+							  		 <div id="collapseOne" class="panel-collapse collapse">
+							  		 	<div class="panel-body">
+							  				<ul id="collapseOne" class="panel-collapse collapse in">
+							  					<li><a class="submenu" href="salamaternal.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Jardín Maternal</a></li>
+												<li><a class="submenu" href="salainfantes.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Jardín de Infantes</a></li>
+							  				</ul>
+							  			</div>
+							  		</div>
+								</li>
+							</div>
+							<li class="current ultimo"><i class="fa fa-info-circle" aria-hidden="true"></i>Contacto</li>
+						</ul>
+					</nav>
+				</aside>
+				<section>
+					<h1 id="titulo2" class="fadeIn animated">Contacto</h1>
+				</section>
+			</div>
+			<!--<a href="#container"><div id="down"><i class="fa fa-angle-down boton" aria-hidden="true"></i></div></a>-->
+		</header>
+		<section class="espacioinferior">
+			<div class="container center">	
+				<div class="center">
+					<div class="contacto left">
+						<form action="contacto.html" method="get" name="form" id="formulario">
+							<h2>Nombre</h2>
+							<input type="text" name="nombre" id="nombre" placeholder="Su nombre">
+				
+							<h2>Email</h2>
+							<input type="text" name="email" id="email" placeholder="Su email">
+							
+							<h2>Mensaje</h2>
+							<textarea placeholder="Su mensaje" rows="6"></textarea>
+							
+							<input type="submit" value="Enviar" class="submit">
+						</form>
+					</div>
+				</div>		
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="wrap">
+					<div class="center separadorderecha col-md-4">
+						<div>
+							<h1><i class="fa fa-phone" aria-hidden="true"></i><br>Teléfonos</h1>
+							<p>4325.6989 - 4659.8787</p>
+						</div>
+					</div>
+					<div class="center separadorderecha col-md-4">
+						<div>
+							<h1><i class="fa fa-map-marker" aria-hidden="true"></i><br>Dirección</h1>
+							<p>Arenales 785, CABA</p>
+						</div>
+					</div>
+					<div class="center col-md-4">
+						<div>
+							<h1><i class="fa fa-envelope" aria-hidden="true"></i><br>Email</h1>
+							<p>info@jardinfatima.com.ar</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>	
+</html>
